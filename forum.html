@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Teochew</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/forum.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/forum.js"></script>
+</head>
+<body id="top">
+	<div id="allContent">
+		<header id="header">
+			<img alt="湘桥日出" src="images/headerbg.jpg">
+		</header>
+		<h1 id="title">
+			胶己人的<span>社区</span>
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="../xss/index.html">CTF</a></li>
+				<li class="selected"><a href="forum.html">Forum</a></li>
+				<li><a href="http://www.github.com/A-23187/">GitHub</a></li>
+			</ul>
+		</nav>
+
+		<article>
+			<header>
+				<h1>谈谈你最喜欢吃的潮州美食</h1>
+				<span>作者</span>
+				<span class="author">A23187</span>
+				<span class="divider">|</span>
+				<span>最后更新于</span>
+				<time title="最后更新于" datetime="2018-12-01 12:00z">2018/12/3</time>
+			</header>
+			<div class="figureWrapper">
+				<img class="figure" alt="牛肉丸" src="images/niurouwan.gif">
+				<br>
+				<span>牛肉丸</span>
+			</div>
+			<p>
+				作为一个在外求学的学生，最心心念念的就是家里的牛肉丸了，火锅里的牛肉丸，粿条汤里的牛肉丸，真的是怎么吃都不感觉腻。在广州这边，也有几家较正宗的潮州菜，但是价格颇贵，而且还是觉得没有家里的好吃。
+			</p>
+			<p>
+				当然，除了牛肉丸之外，也非常想念家里各种各样的小吃，家常菜…… 以前，对这些东西，也没有说非常喜欢。但离开家之后，却时常会想起舌尖上这些熟悉的味道。
+			</p>
+			<p>
+				你们呢？在评论区，告诉我，你最喜欢的潮州美食吧。
+			</p>
+		</article>
+		<section class="comments">
+			<div class="editPanel">
+				<textarea id="commentsEditArea" onkeypress="commentByHotKey(event)" placeholder="你最喜欢潮州什么美食"></textarea>
+				<br>
+				<button title="Ctrl+Enter" onclick="comment()">回复</button>
+			</div>
+			<div class="count" id="count0">
+				<span>0</span> 评论
+			</div>
+			<div class="list" id="list0">
+			</div>
+		</section>
+		<footer>
+			<p id="copyright">
+				Copyright &copy; <span></span> A23187 All rights reserved.
+			</p>
+		</footer>
+	</div>
+	<a id="backToTop" title="返回顶部" href="#top">
+		<img alt="back to top" src="images/up.png">
+	</a>
+</body>
+</html>

@@ -20,7 +20,7 @@
 			<ul>
 				<li><a href="../xss/index.html">CTF</a></li>
 				<li class="selected"><a href="forum.html">Forum</a></li>
-				<li><a href="http://www.github.com/A-23187/">GitHub</a></li>
+				<li><a href="https://github.com/A-23187/TeochewerForum">GitHub</a></li>
 			</ul>
 		</nav>
 
@@ -55,9 +55,10 @@
 				<button title="Ctrl+Enter" onclick="comment()">回复</button>
 			</div>
 			<div class="count" id="count0">
-				<span>0</span> 评论
+				<span>{{count}}</span> 评论
 			</div>
 			<div class="list" id="list0">
+				{{comments}}
 			</div>
 		</section>
 		<footer>

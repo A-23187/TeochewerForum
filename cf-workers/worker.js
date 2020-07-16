@@ -23,7 +23,7 @@ function resp(content, status = 200) {
 async function forum(url) {
 	const BASE_PATH = 'https://raw.githubusercontent.com/A-23187/TeochewerForum/master/';
 	const API_BASE_URL = 'https://api.github.com/repos/A-23187/TeochewerForum/issues';
-	const API_HEADERS = {'User-Agent': 'A-23187', 'Authorization': 'token <place_your_personal_token_here>'};
+	const API_HEADERS = {'User-Agent': 'A-23187', 'Authorization': 'token ' + GH_TOKEN};
 	const CARD = `<div class="card">
 	<img src="images/anonymous.png">
 	<div class="wrapper">
@@ -37,6 +37,8 @@ async function forum(url) {
 	var comment = url.searchParams.get('comment');
 
 	if(comment == null || comment == '') {
+        if(path == '')
+            path = 'forum.html';
 		if(path == 'forum.html') {
 			var template = await fetch(BASE_PATH + path)
 				.then(res => res.text());

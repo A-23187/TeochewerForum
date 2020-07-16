@@ -46,7 +46,7 @@ function changeCommentsConut() {
 	countSpan.text(commentsCount);
 }
 
-String.prototype.format = function(){
+String.prototype.format = function() {
     var args = arguments;
 	var count = 0;
     return this.replace(/%s/g, function(s, i) {
